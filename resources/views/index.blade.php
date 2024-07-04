@@ -1,14 +1,13 @@
 {{-- @extends('layouts.main') --}}
 {{-- @section('container') --}}
 <!doctype html>
-<html class="no-js" lang="en">
-
-<!-- Mirrored from htmldemo.net/handstand/handstand/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Jul 2024 02:12:13 GMT -->
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Home Page || Handstand</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Roemah Yoga Rian</title>
   <meta name="description"
     content="The template is built for Sport Clubs, Health Clubs, Gyms, Fitness Centers, Personal Trainers and other sport">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,29 +16,34 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 
   <!-- All css here -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/3.11.2/modernizr.min.js"></script>
   <link rel="stylesheet" href="css/shortcode/shortcodes.css"> <!-- Keep local as no CDN available -->
   <link rel="stylesheet" href="style.css"> <!-- Keep local as it's custom -->
-  <link rel="stylesheet" href="css/responsive.css"> <!-- Keep local as no CDN available -->
+  <link rel="stylesheet" href="css/responsive.css"> <!-- Keep local as no CDN available --> --}}
 
-  {{--
+  
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/shortcode/shortcodes.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script> --}}
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <style>
+    .top {
+        max-width: unset !important;
+    }
+    .slider-area {
+        max-width: unset !important;
+    }
+    </style>
 </head>
 
 <body>
-  <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
+  
 
   <!-- Header Area Start -->
   <header class="top">
@@ -90,7 +94,7 @@
               <div class="col-lg-7">
                 <div class="text-content-wrapper">
                   <div class="text-content text-start">
-                    <h5>Welcome Our Handstand</h5>
+                    <h5>Welcome to Roemah Yoga Rian</h5>
                     <h1>Keep <span>Refresh & Strong</span> Your Body</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor pharetra iss neque.
                       Nullam cursus elit sit amet justo interdum facilisis id at tortor. </p>
@@ -109,7 +113,7 @@
               <div class="col-lg-7">
                 <div class="text-content-wrapper">
                   <div class="text-content text-start">
-                    <h5>Welcome Our Handstand</h5>
+                    <h5>Welcome to Roemah Yoga Rian</h5>
                     <h1>Keep <span>Refresh & Strong</span> Your Body</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor pharetra iss neque.
                       Nullam cursus elit sit amet justo interdum facilisis id at tortor. </p>
@@ -130,7 +134,7 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="about-content">
-            <h2>about our handstand</h2>
+            <h2>about Roemah Yoga Rian</h2>
             <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum issss
               has been the industry's standard dummy text ever since the 1500s, when an unknown lorem printer took a
               galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
@@ -513,7 +517,7 @@
           </div>
           <div class="event-wrapper">
             <div class="event-content text-center">
-              <h3>Yoga celebration in Handstand</h3>
+              <h3>Yoga celebration in RYR</h3>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry'ssurvived </p>
               <h4>25 March 2021</h4>
@@ -844,7 +848,7 @@
   <!-- Footer Area End -->
 
   <!-- All js here -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  {{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
@@ -857,9 +861,9 @@
 
   <script src="js/ajax-mail.js"></script> <!-- No CDN available, keep local -->
   <script src="js/plugins.js"></script> <!-- No CDN available, keep local -->
-  <script src="js/main.js"></script> <!-- No CDN available, keep local -->
+  <script src="js/main.js"></script> <!-- No CDN available, keep local --> --}}
 
-  {{-- <script src="js/vendor/jquery-3.6.0.min.js"></script>
+  <script src="js/vendor/jquery-3.6.0.min.js"></script>
   <script src="js/vendor/jquery-migrate-3.3.2.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
@@ -871,7 +875,7 @@
   <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/jquery.magnific-popup.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script> --}}
+  <script src="js/main.js"></script>
 </body>
 
 <!-- Mirrored from htmldemo.net/handstand/handstand/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Jul 2024 02:12:33 GMT -->
