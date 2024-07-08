@@ -2,6 +2,15 @@
 
 @section('container')
 
+{{-- <style>
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button
+}
+</style> --}}
+
 <div class="row justify-content-center">
   <div class="col-md-4">
     @if(session()-> has('success'))
@@ -42,6 +51,7 @@
         <div class="btns">
           <button class="btn-menu animated fadeInUp scrollto" type="submit">Login</button>
         </div>
+
 
         <br>
         {{-- <div class="btns">

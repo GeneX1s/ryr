@@ -4,13 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\MenuController;
-use App\Http\Controllers\IngredientController;
-use App\Http\Controllers\SpecialController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\OrderController;
-use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\InventoryController;
 
 /*

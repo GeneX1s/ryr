@@ -26,20 +26,22 @@
 
   
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/font-awesome.min.css">
   <link rel="stylesheet" href="css/shortcode/shortcodes.css">
+  <link rel="stylesheet" href="../../css/material-design-iconic-font.css">
+  <link rel="stylesheet" href="../css/material-design-iconic-font.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <style>
+  {{-- <style>
     .top {
         max-width: unset !important;
     }
     .slider-area {
         max-width: unset !important;
     }
-    </style>
+    </style> --}}
 </head>
 
 <body>
@@ -52,7 +54,7 @@
         <div class="row">
           <div class="col-lg-2">
             <div class="logo">
-              <a href="login"><img src="img/logo/logo.webp" alt="COFFEE" /></a>
+              <a href="dashboard"><img src="img/logo/logo.webp" alt="COFFEE" /></a>
             </div>
           </div>
           <div class="col-lg-8">
@@ -96,8 +98,7 @@
                   <div class="text-content text-start">
                     <h5>Welcome to Roemah Yoga Rian</h5>
                     <h1>Keep <span>Refresh & Strong</span> Your Body</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor pharetra iss neque.
-                      Nullam cursus elit sit amet justo interdum facilisis id at tortor. </p>
+                    <p>Embrace Serenity, Embody Strength: Transform with Yoga. Find Your Inner Balance: Where Mindfulness Meets Movement. </p>
                     <a class="banner-btn" href="gallery.html" data-text="read more"><span>read more</span></a>
                   </div>
                 </div>
@@ -115,8 +116,7 @@
                   <div class="text-content text-start">
                     <h5>Welcome to Roemah Yoga Rian</h5>
                     <h1>Keep <span>Refresh & Strong</span> Your Body</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor pharetra iss neque.
-                      Nullam cursus elit sit amet justo interdum facilisis id at tortor. </p>
+                    <p>Finding your way to peace and healthiness through doing yoga. </p>
                     <a class="banner-btn" href="gallery.html" data-text="read more"><span>read more</span></a>
                   </div>
                 </div>
@@ -135,13 +135,14 @@
         <div class="col-lg-6">
           <div class="about-content">
             <h2>about Roemah Yoga Rian</h2>
-            <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum issss
-              has been the industry's standard dummy text ever since the 1500s, when an unknown lorem printer took a
-              galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-              lorem ipsum is.</p>
-            <p>but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-              1960s with the release of Letraset sheets containing Lorem Ipsum passages, and is more recently with
-              desktop publishing software like Aldus PageMaker including versions. </p>
+            <p class="m-0">Welcome to Roemah Yoga Rian, where tranquility meets transformation. Nestled in the heart of Jakarta, our studio is a serene sanctuary dedicated to nurturing your mind, body, and spirit through the practice of yoga.
+            </p><br>
+            <p>At Roemah Yoga Rian, we believe in the power of yoga to heal, strengthen, and rejuvenate. Whether you're a seasoned yogi or stepping onto the mat for the first time, our experienced instructors are here to guide and support you on your journey to wellness. From calming Hatha sessions to dynamic Vinyasa flows, our diverse classes cater to all levels and preferences, ensuring there's something for everyone. </p>
+            {{-- Beyond yoga classes, our studio offers a welcoming community where you can connect with like-minded individuals who share a passion for health and mindfulness. We're committed to creating a space that fosters growth, relaxation, and inner peace, allowing you to leave each session feeling balanced and revitalized.
+              
+              Join us at Roemah Yoga Rian and discover the transformative benefits of yoga in a warm and inviting atmosphere. Whether you seek physical fitness, mental clarity, or simply a moment of tranquility amidst the bustle of daily life, our studio is here to support your holistic well-being.
+              
+              Come experience the essence of yoga with us — where every breath, stretch, and pose brings you closer to a harmonious mind-body connection. Welcome to [Yoga Studio Name], where your journey to wellness begins. --}}
             <a class="banner-btn" href="about-us.html" data-text="read more"><span>read more</span></a>
           </div>
         </div>
@@ -168,8 +169,7 @@
         <div class="col-lg-8 offset-lg-2">
           <div class="section-title text-center">
             <h2>our classes</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum issss has been the
-              industry's standard dummy text ever since the 1500s, when an unknown lorem </p>
+            <p>Here are a variety of classes that is available regularly in Roemah Yoga Rian, special classes and private classes are separate and therefore not listed below</p>
           </div>
         </div>
       </div>
@@ -271,7 +271,7 @@
               <tbody class="pt-30">
                 <tr>
                   <td class="time">
-                    <p>8:00 AM</p>
+                    <p>7:00 AM</p>
                   </td>
                   <td class="purple">
                     <h4>yoga for climbers</h4>
@@ -287,8 +287,8 @@
                   </td>
                   <td></td>
                   <td class="purple">
-                    <h4>yoga for climbers</h4>
-                    <p>Sathi Bhuiyan</p>
+                    <h4>Ashtanga Yoga</h4>
+                    <p>Okta</p>
                     <p>8.00 Am-10.00Am</p>
                   </td>
                   <td></td>
@@ -877,8 +877,6 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 </body>
-
-<!-- Mirrored from htmldemo.net/handstand/handstand/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Jul 2024 02:12:33 GMT -->
 
 </html>
 

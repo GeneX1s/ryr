@@ -23,12 +23,12 @@
   {{-- <link rel="stylesheet" href="css/responsive.css"> <!-- Keep local as no CDN available --> --}}
 
   
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/shortcode/shortcodes.css">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/shortcode/shortcodes.css">
+  <link rel="stylesheet" href="../../css/slick.css">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <style>
     .top {
@@ -41,7 +41,7 @@
 </head>
 
 <body>
-
+  @include('layouts.header')
 
 
   <div class="container">

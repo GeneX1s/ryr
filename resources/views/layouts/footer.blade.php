@@ -1,74 +1,76 @@
-<!doctype html>
-<html lang="en">
-
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <h3>Roemah Yoga Rian</h3>
-              <p>
-                Jl. Krekot Bunder 3 <br>
-                N0.47, Pasar Baru|Sawah Besar<br><br>
-                <strong>Phone:</strong> 0812 80900988<br>
-                <strong>Email:</strong> apriyanti_lesmana@gmail.com<br>
-              </p>
-              <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+<footer class="footer-area bg-gray">
+  <div class="footer-widget-area bg-3 pt-98 pb-90 fix">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="single-footer-widget">
+            <a href="index.html"><img src="img/logo/logo.webp" alt="handstand"></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a convallis nulla. Ut </p>
+            <ul>
+              <li><i class="zmdi zmdi-email"></i> username@gmail.com</li>
+              <li><i class="zmdi zmdi-phone"></i> (+660 256 24857)</li>
+              <li><i class="zmdi zmdi-home"></i> Your Address Here</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-footer-widget">
+            <h3>Recent Tweets</h3>
+            <div class="single-twitt mb-10">
+              <div class="twitt-icon">
+                <i class="zmdi zmdi-twitter"></i>
+              </div>
+              <div class="twitt-content">
+                <p>@envato good News for today!! We got 2 psd templete weekly top selling quality template in
+                  technology category !!!</p>
+                <a href="https://twitter.com/login/">https://twitter.com/login</a>
+              </div>
+            </div>
+            <div class="single-twitt">
+              <div class="twitt-icon">
+                <i class="zmdi zmdi-twitter"></i>
+              </div>
+              <div class="twitt-content">
+                <p>@envato good News for today!! We got 2 psd templete weekly top selling quality template in
+                  technology category !!!</p>
+                <a href="https://twitter.com/login/">https://twitter.com/login</a>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          {{-- <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-footer-widget">
+            <h3>get in touch</h3>
+            <form id="subscribe-form" action="https://whizthemes.com/mail-php/other/mail.php">
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" placeholder="Name" name="con_name">
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" placeholder="Email" name="con_email">
+                </div>
+                <div class="col-sm-12">
+                  <textarea cols="30" rows="7" name="con_message" placeholder="subject"></textarea>
+                  <button type="submit">submit</button>
+                  <p class="subscribe-message"></p>
+                </div>
+              </div>
             </form>
-
-          </div> --}}
-
+          </div>
         </div>
       </div>
     </div>
-
+  </div>
+  <div class="footer-text-area fix bg-coffee ptb-18">
     <div class="container">
-      <div class="copyright">
-        Made by <strong><span>NOD</span></strong>
-      </div>
-      <div class="credits">
+      <div class="row">
+        <div class="col-12">
+          <div class="footer-text text-center">
+            <span>Copyright &copy; <a href="https://themeforest.net/user/codecarnival/portfolio">CodeCarnival</a>
+              2022. All Rights Reserved.</span>
+          </div>
+        </div>
       </div>
     </div>
-  </footer><!-- End Footer -->
-
-</html>
+  </div>
+</footer>
