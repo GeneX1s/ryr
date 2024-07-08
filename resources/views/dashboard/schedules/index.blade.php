@@ -60,7 +60,7 @@
 
         <td>{{$schedule->title}}</td>
         <td>Rp.{{ number_format($schedule->harga, '2', ',', '.') }}</td>
-        <td>/{{$schedule->day}}</td>
+        <td>{{$schedule->day}}</td>
         <td>{{$schedule->time}}</td>
         <td>{{$schedule->start_time}}</td>
         <td>{{$schedule->end_time}}</td>

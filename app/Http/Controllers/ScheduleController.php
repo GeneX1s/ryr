@@ -27,7 +27,7 @@ class ScheduleController extends Controller
   {
     // dd($Schedule->id);
     // $ingredients = Ingredients::get();
-    // return view('dashboard.Schedules.group_edit', [
+    // return view('dashboard.schedules.group_edit', [
     //   'Schedule' => $Schedule,
     //   'ingredients' => $ingredients,
     // ]);
@@ -41,7 +41,7 @@ class ScheduleController extends Controller
     $start_date = $request->start_date;
     $end_date = $request->end_date;
 
-    $Schedules = Schedule::query()
+    $schedules = Schedule::query()
       ->when($name_search, function ($query) use ($name_search) {
         return $query->where('nama', 'like', '%' . $name_search . '%');
       })
@@ -57,8 +57,8 @@ class ScheduleController extends Controller
 
     $plus = 0;
     $minus = 0;
-    $pluses = $Schedules->where('tipe', 'Pendapatan')->where('status', 'Active')->pluck('nominal')->all();
-    $minuses = $Schedules->where('tipe', 'Pengeluaran')->where('status', 'Active')->pluck('nominal')->all();
+    $pluses = $schedules->where('tipe', 'Pendapatan')->where('status', 'Active')->pluck('nominal')->all();
+    $minuses = $schedules->where('tipe', 'Pengeluaran')->where('status', 'Active')->pluck('nominal')->all();
     foreach ($pluses as $plus) {
       $total = $total + $plus;
       $pendapatan = $pendapatan + $plus;
@@ -69,9 +69,9 @@ class ScheduleController extends Controller
     }
 
     // dd($data);
-    return view('dashboard.Schedules.index', [
-      // 'Schedules' => $data,
-      'Schedules' => $Schedules,
+    return view('dashboard.schedules.index', [
+      // 'schedules' => $data,
+      'schedules' => $schedules,
       'total' => $total,
       'pendapatan' => $pendapatan,
       'pengeluaran' => $pengeluaran,
@@ -82,7 +82,7 @@ class ScheduleController extends Controller
   {
 
 
-    return view('dashboard.Schedules.create');
+    return view('dashboard.schedules.create');
   }
 
   public function store(Request $request, User $user)
@@ -103,7 +103,7 @@ class ScheduleController extends Controller
     // dd($input);
     Schedule::create($input);
 
-    return redirect('/dashboard/Schedules/index')->with('success', 'New Schedule has been added');
+    return redirect('/dashboard/schedules/index')->with('success', 'New Schedule has been added');
   }
 
   public function edit(Schedule $schedule)
@@ -167,6 +167,6 @@ class ScheduleController extends Controller
 
     // Schedule::destroy($Schedule->id);
 
-    return redirect('/dashboard/Schedules/index')->with('success', 'Schedule has been deleted');
+    return redirect('/dashboard/schedules/index')->with('success', 'Schedule has been deleted');
   }
 }

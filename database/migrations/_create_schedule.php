@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('harga');
             $table->string('day');
+            $table->string('time');
             $table->string('start_time');
             $table->string('end_time');
             $table->timestamps();

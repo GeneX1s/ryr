@@ -37,9 +37,9 @@
     </a>
     <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
       <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Foods:</h6>
-        <a class="collapse-item" href="/dashboard/menus/index">Menus</a>
-        <a class="collapse-item" href="/dashboard/ingredients/index">Ingredients</a>
+        <h6 class="collapse-header">Class:</h6>
+        <a class="collapse-item" href="/dashboard/schedules/index">Schedule</a>
+        <a class="collapse-item" href="/dashboard/specials/index">Special</a>
       </div>
     </div>
   </li>
