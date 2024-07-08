@@ -16,13 +16,13 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 
   <!-- All css here -->
-  {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/3.11.2/modernizr.min.js"></script>
-  <link rel="stylesheet" href="css/shortcode/shortcodes.css"> <!-- Keep local as no CDN available -->
-  <link rel="stylesheet" href="style.css"> <!-- Keep local as it's custom -->
-  <link rel="stylesheet" href="css/responsive.css"> <!-- Keep local as no CDN available --> --}}
+  {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> --}}
+  {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> --}}
+  {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"> --}}
+  {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/3.11.2/modernizr.min.js"></script> --}}
+  {{-- <link rel="stylesheet" href="css/shortcode/shortcodes.css"> <!-- Keep local as no CDN available --> --}}
+  {{-- <link rel="stylesheet" href="style.css"> <!-- Keep local as it's custom --> --}}
+  {{-- <link rel="stylesheet" href="css/responsive.css"> <!-- Keep local as no CDN available --> --}}
 
   
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -52,7 +52,7 @@
         <div class="row">
           <div class="col-lg-2">
             <div class="logo">
-              <a href="index.html"><img src="img/logo/logo.webp" alt="COFFEE" /></a>
+              <a href="login"><img src="img/logo/logo.webp" alt="COFFEE" /></a>
             </div>
           </div>
           <div class="col-lg-8">

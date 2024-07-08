@@ -23,7 +23,6 @@ class DashboardController extends Controller
   {
 
     $transactions = Transaction::get();
-    $specials = Special::get();
     $month_now = Carbon::now()->format('m');
     $year_now = Carbon::now()->format('Y');
 
@@ -282,7 +281,6 @@ class DashboardController extends Controller
       'earning_y' => $earning_y,
       'area_chart' => $area_chart,
       'order_amount' => $order_amount,
-      'specials' => $specials,
     ]);
   }
 
