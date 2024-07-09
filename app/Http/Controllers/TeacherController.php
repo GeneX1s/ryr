@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Schedule;
+use App\Models\Teacher;
 use Illuminate\Http\Request;
 use \Cviebrock\EloquentSluggable\Services\SlugService;
 use Illuminate\Support\Str;
@@ -23,12 +23,12 @@ class ScheduleController extends Controller
    * @return \Illuminate\Http\Response
    */
 
-  public function show(Schedule $schedule)
+  public function show(Teacher $teacher)
   {
-    // dd($schedule->id);
+    // dd($teacher->id);
     // $ingredients = Ingredients::get();
-    // return view('dashboard.schedules.group_edit', [
-    //   'Schedule' => $schedule,
+    // return view('dashboard.teachers.group_edit', [
+    //   'Teacher' => $teacher,
     //   'ingredients' => $ingredients,
     // ]);
   }
@@ -37,44 +37,17 @@ class ScheduleController extends Controller
   public function index(Request $request)
   {
     $name_search = $request->name;
-    $jenis_search = $request->jenis;
-    $start_date = $request->start_date;
-    $end_date = $request->end_date;
-
-    $schedules = Schedule::query()
+    
+    $teachers = Teacher::query()
       ->when($name_search, function ($query) use ($name_search) {
-        return $query->where('nama', 'like', '%' . $name_search . '%');
-      })
-      ->when($jenis_search, function ($query) use ($jenis_search) {
-        return $query->where('jenis', 'like', '%' . $jenis_search . '%');
+        return $query->where('name', 'like', '%' . $name_search . '%');
       })
       ->get();
 
-    $total = 0;
-    $pendapatan = 0;
-    $pengeluaran = 0;
-    $data = [];
-
-    $plus = 0;
-    $minus = 0;
-    $pluses = $schedules->where('tipe', 'Pendapatan')->where('status', 'Active')->pluck('nominal')->all();
-    $minuses = $schedules->where('tipe', 'Pengeluaran')->where('status', 'Active')->pluck('nominal')->all();
-    foreach ($pluses as $plus) {
-      $total = $total + $plus;
-      $pendapatan = $pendapatan + $plus;
-    }
-    foreach ($minuses as $minus) {
-      $total = $total - $minus;
-      $pengeluaran = $pengeluaran + $minus;
-    }
-
     // dd($data);
-    return view('dashboard.schedules.index', [
-      // 'schedules' => $data,
-      'schedules' => $schedules,
-      'total' => $total,
-      'pendapatan' => $pendapatan,
-      'pengeluaran' => $pengeluaran,
+    return view('dashboard.teachers.index', [
+      // 'teachers' => $data,
+      'teachers' => $teachers,
     ]);
   }
 
@@ -82,7 +55,7 @@ class ScheduleController extends Controller
   {
 
 
-    return view('dashboard.schedules.create');
+    return view('dashboard.teachers.create');
   }
 
   public function store(Request $request, User $user)
@@ -101,14 +74,14 @@ class ScheduleController extends Controller
     $input = $request->all();
 
     // dd($input);
-    Schedule::create($input);
+    Teacher::create($input);
 
-    return redirect('/dashboard/schedules/index')->with('success', 'New Schedule has been added');
+    return redirect('/dashboard/teachers/index')->with('success', 'New Teacher has been added');
   }
 
-  public function edit(Schedule $schedule)
+  public function edit(Teacher $schedule)
   {
-    return view('dashboard.schedules.edit', [
+    return view('dashboard.teachers.edit', [
       'schedule' => $schedule,
     ]);
   }
@@ -120,7 +93,7 @@ class ScheduleController extends Controller
    * @param  \App\Models\Book  $book
    * @return \Illuminate\Http\Response
    */
-  public function update(Request $request, Schedule $schedule)
+  public function update(Request $request, Teacher $schedule)
   {
     $data = [
       'title' => 'required',
@@ -148,25 +121,25 @@ class ScheduleController extends Controller
       $validatedData['foto'] = null;
     }
 
-    Schedule::where('id', $schedule->id)->update($validatedData);
-    // Schedule::where('id',$request->id)->update($validatedData);
+    Teacher::where('id', $schedule->id)->update($validatedData);
+    // Teacher::where('id',$request->id)->update($validatedData);
 
-    return redirect('/dashboard/schedules/index')->with('success', 'Schedule has been updated');
+    return redirect('/dashboard/teachers/index')->with('success', 'Teacher has been updated');
   }
 
-  public function destroy(Schedule $schedule, Request $request)
+  public function destroy(Teacher $teacher, Request $request)
   {
 
-    $schedule = Schedule::where('id', $schedule->id)->first();
-    // $schedule->delete();
-    // dd($schedule);
-    $schedule->update([
+    $teacher = Teacher::where('id', $teacher->id)->first();
+    // $teacher->delete();
+    // dd($teacher);
+    $teacher->update([
       "status" => "Deleted",
       "deleted_at" => Carbon::now(),
     ]);
 
-    // Schedule::destroy($schedule->id);
+    // Teacher::destroy($teacher->id);
 
-    return redirect('/dashboard/schedules/index')->with('success', 'Schedule has been deleted');
+    return redirect('/dashboard/teachers/index')->with('success', 'Teacher has been deleted');
   }
 }

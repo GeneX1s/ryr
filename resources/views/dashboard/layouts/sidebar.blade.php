@@ -45,9 +45,9 @@
   </li>
 
   <li class="nav-item">
-    <a class="nav-link" href="/dashboard/specials/index">
+    <a class="nav-link" href="/dashboard/teachers/index">
       <i class="fas fa-fw fa-star"></i>
-      <span>Specials</span></a>
+      <span>Teachers</span></a>
   </li>
 
   <li class="nav-item">

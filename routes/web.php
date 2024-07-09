@@ -9,6 +9,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\InventoryController;
 use App\Http\Controllers\ScheduleController;
+use App\Http\Controllers\TeacherController;
 
 
 /*
@@ -58,6 +59,12 @@ Route::resource('/dashboard/transactions', TransactionController::class)->middle
 Route::get('/dashboard/schedules/index', [ScheduleController::class, 'index'])->middleware('auth');
 Route::get('/dashboard/schedules/create', [ScheduleController::class, 'create'])->middleware('auth');
 Route::resource('/dashboard/schedules', ScheduleController::class)->middleware('auth');
+////////////////////////////////////
+
+////////////////Teachers/////////
+Route::get('/dashboard/teachers/index', [TeacherController::class, 'index'])->middleware('auth');
+Route::get('/dashboard/teachers/create', [TeacherController::class, 'create'])->middleware('auth');
+Route::resource('/dashboard/teachers', TeacherController::class)->middleware('auth');
 ////////////////////////////////////
 
 ////////////////Orders/////////
